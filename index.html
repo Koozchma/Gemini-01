@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmic Clicker Conquest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'space-dark': '#0f172a', // A deep, dark blue, like the void of space
+              'space-mid': '#1e293b',  // A slightly lighter blue-gray
+              'space-light': '#334155', // For highlights or interactive elements
+              'nebula-purple': '#8b5cf6', // Vibrant purple for accents
+              'star-yellow': '#facc15',   // Bright yellow for important info or stars
+              'crystal-blue': '#38bdf8',  // A clear, bright blue for crystals or mana
+              'planet-green': '#22c55e', // Earthy green for terrestrial elements
+              'danger-red': '#ef4444',
+              'success-green': '#10b981',
+            },
+            fontFamily: {
+              'sans': ['"Inter"', 'sans-serif'], // A clean, modern sans-serif
+              'display': ['"Orbitron"', 'sans-serif'] // A futuristic display font
+            },
+            animation: {
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'fadeIn': 'fadeIn 0.5s ease-out',
+              'slideInUp': 'slideInUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideInUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0'},
+                '100%': { transform: 'translateY(0px)', opacity: '1'},
+              }
+            }
+          }
+        }
+      }
+    </script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-space-dark text-slate-200 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
+<link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
